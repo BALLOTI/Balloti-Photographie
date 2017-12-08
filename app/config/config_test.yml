@@ -5,7 +5,7 @@ imports:
     - { resource: "config.yml" }
 
 parameters:
-    locale: en_US
+    locale: fr_FR
 
 framework:
     test: ~

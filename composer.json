@@ -17,6 +17,10 @@
         {
             "name": "Community contributions",
             "homepage": "http://github.com/Sylius/Sylius/contributors"
+        },
+        {
+            "name": "BALLOTI",
+            "email": "rballoti@hotmail.fr"
         }
     ],
     "require": {
