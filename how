@@ -1,0 +1,33 @@
+[33mcommit 2e7c59fc586706d382fe726b73d62e43429ccb78[m
+Merge: 0897528 5058fbd
+Author: Rachid Balloti <rballoti21@gmail.com>
+Date:   Mon Dec 18 11:24:50 2017 +0100
+
+    Merge branch 'master' of github.com:BALLOTI/Balloti-Photographie into devMaster
+
+[33mcommit 0897528a1b48012c2beb905a2d20502316f897ea[m
+Author: Rachid Balloti <rballoti21@gmail.com>
+Date:   Mon Dec 18 11:14:10 2017 +0100
+
+    Add file support.html.twig
+
+[33mcommit 5058fbd7a0b925c2ba38485fa4de1a7b265f6531[m
+Merge: a02fc8c 7bea16f
+Author: BALLOTI <rballoti@hotmail.fr>
+Date:   Fri Dec 8 16:01:47 2017 +0100
+
+    Merge pull request #1 from BALLOTI/devMaster
+    
+    update tables and add files
+
+[33mcommit 7bea16fc083a527e159a43dd949edb0f19dcec80[m
+Author: Rachid Balloti <rballoti21@gmail.com>
+Date:   Fri Dec 8 15:52:23 2017 +0100
+
+    update tables
+
+[33mcommit a02fc8c38c09d476feaa06cbd542cc3a083cfe70[m
+Author: Rachid Balloti <rballoti21@gmail.com>
+Date:   Thu Dec 7 11:50:48 2017 +0100
+
+    first commit
