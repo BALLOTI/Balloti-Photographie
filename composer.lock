@@ -8472,6 +8472,7 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/7fbc25c13309de0c4c9bb48b7361f1eca34c7fbd",
                 "reference": "7fbc25c13309de0c4c9bb48b7361f1eca34c7fbd",
+
                 "shasum": ""
             },
             "require": {
@@ -8540,6 +8541,7 @@
                 "testing",
                 "xunit"
             ],
+
             "time": "2017-12-17T06:14:38+00:00"
         },
         {
