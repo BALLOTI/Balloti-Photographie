@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <title>{% block title %}Balloti-Photographie{% endblock %}</title>
+    <title>{% block title %}Sylius{% endblock %}</title>
 
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
 
@@ -13,6 +13,9 @@
     {% endblock %}
 
     {% block stylesheets %}
+        <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
+        <link href="{{ asset('assets/shop/css/bitbag.css') }}" rel="stylesheet">
+
         {% include '@SyliusUi/_stylesheets.html.twig' with {'path': 'assets/shop/css/style.css'} %}
 
         {{ sonata_block_render_event('sylius.shop.layout.stylesheets') }}
@@ -46,7 +49,13 @@
 
                 {{ sonata_block_render_event('sylius.shop.layout.after_header') }}
 
-                {{ render(url('sylius_shop_partial_taxon_index_by_code', {'code': 'category', 'template': '@SyliusShop/Taxon/_horizontalMenu.html.twig'})) }}
+                <div class="ui large stackable menu">
+                    {{ render(path('bitbag_sylius_cms_plugin_shop_page_show_link_by_code', {'code' : 'about', 'template' : '@BitBagSyliusCmsPlugin/Shop/Page/Show/_link.html.twig'})) }}
+                    {{ render(url('sylius_shop_partial_taxon_index_by_code', {'code': 'category', 'template': '@SyliusShop/Taxon/_horizontalMenu.html.twig'})) }}
+
+                    <a href="{{ path('bitbag_sylius_cms_plugin_shop_frequently_asked_question_index') }}">
+                    </a>
+                </div>
             </header>
         {% endblock %}
 
