@@ -51,6 +51,7 @@ swiftmailer:
     host: "%mailer_host%"
     username: "%mailer_user%"
     password: "%mailer_password%"
+    spool : { type: memory}
 
 fos_rest:
     exception: ~
@@ -63,3 +64,8 @@ fos_rest:
         rules:
             - { path: '^/api', priorities: ['json', 'xml'], fallback_format: json, prefer_extension: true }
             - { path: '^/', stop: true }
+
+sylius_mailer:
+    sender:
+        name: Balloti-Photographie
+        address: ballotiphotographie@sfr.fr

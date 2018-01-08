@@ -14,3 +14,4 @@ monolog:
             type: stream
             path: "%kernel.logs_dir%/%kernel.environment%.log"
             level: debug
+disable_delivery: true
