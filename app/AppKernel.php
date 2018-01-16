@@ -33,6 +33,7 @@ class AppKernel extends Kernel
 
             new \AppBundle\AppBundle(),
             new \BitBag\SyliusCmsPlugin\BitBagSyliusCmsPlugin(),
+
         ];
 
         return array_merge(parent::registerBundles(), $bundles);

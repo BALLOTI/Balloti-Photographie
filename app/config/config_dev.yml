@@ -23,7 +23,13 @@ monolog:
             level: info
 
 swiftmailer:
-    disable_delivery: true
+    transport: "%mailer_transport%"
+    host: "%mailer_host%"
+    username: "%mailer_user%"
+    password: "%mailer_password%"
+    port: "%mailer_port%"
+
+
 
 web_profiler:
     toolbar: true
