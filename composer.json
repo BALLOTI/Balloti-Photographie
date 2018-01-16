@@ -20,14 +20,15 @@
         },
         {
             "name": "BALLOTI",
-            "email": "rballoti@hotmail.fr"
+            "email": "rballoti21@gmail.com"
         }
     ],
     "require": {
         "php": "^7.1",
 
         "sylius/sylius": "^1.0.4",
-        "bitbag/cms-plugin": "^1.2"
+        "bitbag/cms-plugin": "^1.2",
+        "sylius/mailer-bundle": "^1.0"
     },
     "require-dev": {
         "behat/behat": "^3.2",
