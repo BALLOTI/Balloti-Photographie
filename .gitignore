@@ -6,9 +6,6 @@
 !/var/.gitkeep
 
 /web/bundles
-/web/css
-/web/js
-/web/media
 
 /bin/*
 !/bin/console
