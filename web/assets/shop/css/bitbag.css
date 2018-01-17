@@ -1,0 +1,72 @@
+h1 {
+    font-style: italic;
+    color: rgba(5,46,169,0.87);
+    text-align: center;
+}
+
+h2,h3 {
+    font-style: italic;
+    color: rgba(178, 5, 0, 0.87);
+    text-align: center;
+}
+
+h5 {
+    font-style: italic;
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+
+.bitbag-page a, .bitbag-page a:hover {
+    color: rgba(0, 0, 0, .87);
+    width: 100%;
+}
+
+.bitbag-image-block img {
+    position: relative;
+}
+
+.top.one {
+    margin-top: 1rem;
+    color: #052ea9;
+}
+
+.bitbag-image-block span {
+    z-index: 25;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.3rem;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.bitbag-image-block span a {
+    text-decoration: none;
+    width: 100%;
+    color: #ff0500;
+}
+
+.bitbag-page, .bitbag-frequently-asked-question {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid rgba(34, 36, 38, .15);
+}
+
+.bitbag-page:hover {
+    background: rgba(0, 0, 0, .03);
+}
+
+.italic {
+    font-style: italic;
+}
+
+.intro {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 900;
+    color: #052ea9;
+    background-color: rgba(0, 239, 255, 0.04);
+    border-radius: 15px 15px 15px 15px;
+    border-bottom: 1px solid rgba(34, 36, 38, .15);
+}
