@@ -346,3 +346,10 @@ th a:visited {
 .ui.right.floated.dividing.empty ~ .ui.dropdown > .menu {
     right: 0;
     left: auto; }
+
+@media all and (max-width: 1024px) {
+    .ui[class*="center aligned"].grid {
+        display: none;
+    }
+}
+
