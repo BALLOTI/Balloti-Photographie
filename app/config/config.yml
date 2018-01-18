@@ -53,6 +53,7 @@ swiftmailer:
     password: "%mailer_password%"
     port: "%mailer_port%"
 
+
 fos_rest:
     exception: ~
     view:
@@ -67,5 +68,5 @@ fos_rest:
 
 sylius_mailer:
     sender:
-        name: Balloti-Photographie
-        address: rballoti21@gmail.
+        name: Contact Balloti
+        address: rballoti21@gmail.com
