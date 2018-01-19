@@ -50,7 +50,6 @@ h5 {
 .bitbag-page, .bitbag-frequently-asked-question {
     padding-top: 1rem;
     padding-bottom: 1rem;
-    position: fixed;
     border-bottom: 1px solid rgba(34, 36, 38, .15);
 }
 
