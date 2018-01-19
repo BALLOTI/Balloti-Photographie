@@ -8,3 +8,4 @@ sylius_shop_contact_request:
         _controller: sylius.controller.shop.contact:requestAction
         _sylius:
             redirect: sylius_shop_homepage
+            locale: fr_FR
