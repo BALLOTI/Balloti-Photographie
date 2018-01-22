@@ -44,7 +44,8 @@ h5 {
 .bitbag-image-block span a {
     text-decoration: none;
     width: 100%;
-    color: #ff0500;
+    color: #ffedf0;
+    background-color: rgba(0, 0, 0, 0.59);
 }
 
 .bitbag-page, .bitbag-frequently-asked-question {

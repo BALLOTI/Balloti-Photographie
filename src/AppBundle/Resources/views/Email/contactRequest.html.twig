@@ -1,12 +1,12 @@
 {% block subject %}
-    Contact request
+    Demande de contact
 {% endblock %}
 
 {% block body %}
     {% autoescape %}
-        Message from: {{ data.email }}
+        Message de: {{ data.email }}
         <br/>
-        Content:
+        Contenu:
         <br/>
         "{{ data.message }}"
     {% endautoescape %}
