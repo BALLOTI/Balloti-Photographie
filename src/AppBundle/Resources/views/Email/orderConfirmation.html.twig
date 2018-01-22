@@ -1,14 +1,14 @@
 {% block subject %}
-    Order confirmation
+    Confirmation de commande
 {% endblock %}
 
 {% block body %}
     {% set url = order.channel.hostname is not null ? 'http://' ~ order.channel.hostname ~ path('sylius_shop_order_show', {'tokenValue': order.tokenValue, '_locale': order.localeCode}) : url('sylius_shop_order_show', {'tokenValue': order.tokenValue, '_locale': order.localeCode}) %}
     {% autoescape %}
-        Your order no. {{ order.number }} has been successfully placed.
+        Votre numéro de commande: {{ order.number }} a été passée avec succès.
         <br/>
-        To view order or change payment method - please visit <a href="{{ url|raw }}">{{ url|raw }}</a>
+        Pour voir la commande ou changer la méthode de paiement, veuillez suivre ce lien: <a href="{{ url|raw }}">{{ url|raw }}</a>
         <br/><br/>
-        Thank you for shopping at our store!
+        Merci pour vos achats dans notre magasin!
     {% endautoescape %}
 {% endblock %}

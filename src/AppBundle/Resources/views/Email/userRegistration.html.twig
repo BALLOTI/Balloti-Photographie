@@ -1,13 +1,13 @@
 {% block subject %}
-    User registration
+    Enregistrement de l'utilisateur
 {% endblock %}
 
 {% block body %}
     {% autoescape %}
-        Welcome to our store!
+        Bienvenue dans notre magasin!
         <br/><br/>
-        You have just been registered.
+        Vous venez d'être enregistré.
         <br/>
-        Thank you {{ user.username }}.
+        Nous vous remercions {{ user.username }} de votre confiance.
     {% endautoescape %}
 {% endblock %}
