@@ -6,5 +6,8 @@
     {% set url = channel.hostname is not null ? 'http://' ~ channel.hostname ~ path('sylius_shop_user_verification', { 'token': user.emailVerificationToken}) : url('sylius_shop_user_verification', { 'token': user.emailVerificationToken}) %}
     {% autoescape %}
         Pour vérifier votre adresse e-mail, veuillez suivre ce lien: <a href="{{ url|raw }}">{{ url|raw }}</a>
+        <br/><br/>
+        Cordialement,<br/>
+        Balloti-Photographie.
     {% endautoescape %}
 {% endblock %}
