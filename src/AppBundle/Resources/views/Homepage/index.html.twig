@@ -3,10 +3,39 @@
 {% block content %}
     <div class="top one">
         <div class="ui center aligned segment stackab grid">
-            <img class="ui image "
-                 src="{{ asset('media/image/wedding.jpg') }}"
-                 alt="Balloti-Photographie"/>
-            <h4>Immortalisiez vous moments magiques avec des photos sublimes !</h4>
+            <div id="carousel-balloti-photographie" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#carousel-balloti-photographie" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel-balloti-photographie" data-slide-to="1"></li>
+                    <li data-target="#carousel-balloti-photographie" data-slide-to="2"></li>
+                </ol>
+
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                        <img src="{{ asset('media/image/marriage2.jpg') }}" alt="photo de mariage">
+                        <div class="carousel-caption">
+                            <p class="one">Immortalisiez vous moments magiques avec des photos sublimes !</p>
+                            <p class="tow">Gardez des souvenirs de vos moments magiques et inoubliables..!</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="{{ asset('media/image/tattoo2.jpg') }}" alt="photographie">
+                        <div class="carousel-caption">
+                            <p class="one">Des séances à votre domicile permettent un confort certain pour les nouveaux nés et les enfants bas âge !</p>
+
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="{{ asset('media/image/wedding2.jpg') }}" alt="naissance">
+                        <div class="carousel-caption">
+                            <p class="one">Offrez des cadeaux personnalisés qui resterons à jamais graver dans les mémoires  !</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         <h3>Les tarifs sont HT.
             TVA non applicable, art.293 B du CGI.</h3>
