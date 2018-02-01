@@ -10,7 +10,6 @@
                     <li data-target="#carousel-balloti-photographie" data-slide-to="1"></li>
                     <li data-target="#carousel-balloti-photographie" data-slide-to="2"></li>
                 </ol>
-
                 <!-- Wrapper for slides -->
                 <div class="carousel-inner" role="listbox">
                     <div class="item active">
@@ -23,15 +22,13 @@
                     <div class="item">
                         <img src="{{ asset('media/image/tattoo2.jpg') }}" alt="photographie">
                         <div class="carousel-caption">
-                            <p class="one">Des séances à votre domicile permettent un confort certain pour les nouveaux nés et les enfants bas âge !</p>
-
+                            <p class="one">Des séances à votre domicile permettent un confort certain pour les                                 nouveaux nés et les enfants bas âge !</p>
                         </div>
                     </div>
                     <div class="item">
                         <img src="{{ asset('media/image/wedding2.jpg') }}" alt="naissance">
                         <div class="carousel-caption">
-                            <p class="one">Offrez des cadeaux personnalisés qui resterons à jamais graver dans les mémoires  !</p>
-
+                           <p class="one">Offrez des cadeaux personnalisés qui resteront à jamais gravés dans les                             mémoires  !</p>
                         </div>
                     </div>
                 </div>
@@ -73,6 +70,5 @@
             {{ bitbag_cms_render_block('homepage_products_info') }}
         </div>
     </div>
-
     {{ render(url('sylius_shop_partial_product_index_latest', {'count': 4, 'template': '@SyliusShop/Product/_horizontalList.html.twig'})) }}
 {% endblock %}
