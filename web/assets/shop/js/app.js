@@ -1360,7 +1360,7 @@ if(n.refresh(),e.fn.api!==i)if(t=C.api("get request"),o=C.api("was cancelled"))n
                 },
                 onSuccess: function (response) {
                     validationElement.addClass('hidden');
-                    window.location.replace(redirectUrl);
+                    window.location.href = redirectUrl;
                 },
                 onFailure: function (response) {
                     validationElement.removeClass('hidden');
