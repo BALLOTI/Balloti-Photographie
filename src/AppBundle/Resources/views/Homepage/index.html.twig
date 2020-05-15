@@ -3,68 +3,86 @@
 {% block content %}
     <div class="top one">
         <div class="ui center aligned segment stackab grid">
-            <div id="carousel-balloti-photographie" class="carousel slide" data-ride="carousel">
-                <!-- Indicators -->
-                <ol class="carousel-indicators">
-                    <li data-target="#carousel-balloti-photographie" data-slide-to="0" class="active"></li>
-                    <li data-target="#carousel-balloti-photographie" data-slide-to="1"></li>
-                    <li data-target="#carousel-balloti-photographie" data-slide-to="2"></li>
-                </ol>
-                <!-- Wrapper for slides -->
-                <div class="carousel-inner" role="listbox">
-                    <div class="item active">
-                        <img src="{{ asset('media/image/marriage2.jpg') }}" alt="photo de mariage">
-                        <div class="carousel-caption">
-                            <p class="one">Immortalisiez vous moments magiques avec des photos sublimes !</p>
-                            <p class="tow">Gardez des souvenirs de vos moments magiques et inoubliables..!</p>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <img src="{{ asset('media/image/tattoo2.jpg') }}" alt="photographie">
-                        <div class="carousel-caption">
-                            <p class="one">Des séances à votre domicile permettent un confort certain pour les                                 nouveaux nés et les enfants bas âge !</p>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <img src="{{ asset('media/image/wedding2.jpg') }}" alt="naissance">
-                        <div class="carousel-caption">
-                           <p class="one">Offrez des cadeaux personnalisés qui resteront à jamais gravés dans les                             mémoires  !</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <!--
+  ####################################################
+  C A R O U S E L
+  ####################################################
+  -->
+            <div class="container-fluid">
+                <div class="row-fluid">
+                    <div class="span12">
+                        <div class="carousel slide" id="myCarousel">
+                            <div class="carousel-inner">
+                                <div class="item active">
+                                    <div class="bannerImage">
+                                        <img src="{{ asset('media/image/marriage2.jpg') }}" alt="photo de mariage">
+                                            <div class="carousel-caption">
+                                                <p class="one">Immortalisiez vous moments magiques avec des photos sublimes !</p>
+                                                <p class="tow">Gardez des souvenirs de vos moments magiques et inoubliables..!</p>
+                                            </div>
+                                    </div>
+                                </div>
+                                <!-- /Slide1 -->
+                                <div class="item">
+                                    <div class="bannerImage">
+                                        <img src="{{ asset('media/image/tattoo2.jpg') }}" alt="photographie">
+                                            <div class="carousel-caption">
+                                                <p class="one">Des séances à votre domicile permettent un confort certain pour les nouveaux nés et les enfants bas âge !</p>
+                                            </div>
+                                    </div>
+                                </div>
+                                <!-- /Slide2 -->
+                                <div class="item">
+                                    <div class="bannerImage">
+                                        <img src="{{ asset('media/image/wedding2.jpg') }}" alt="naissance">
+                                              <div class="carousel-caption">
+                                                  <p class="one">Offrez des cadeaux personnalisés qui resteront à jamais gravés dans les mémoires  !</p>
+                                              </div>
+                                    </div>
+                                </div>
+                                <!-- /Slide3 -->
+                            </div>
+
+                            <div class="control-box">
+                                <a data-slide="prev" href="#myCarousel" class="carousel-control left">‹</a>
+                                <a data-slide="next" href="#myCarousel" class="carousel-control right">›</a>
+                            </div><!-- /.control-box -->
+                        </div><!-- /#myCarousel -->
+                    </div><!-- /.span12 -->
+                </div><!-- /.row -->
+            </div><!-- /.container -->
         </div>
-        <h3>Les tarifs sont HT.
-            TVA non applicable, art.293 B du CGI.</h3>
-        <div class="ui stackable two column grid">
-            <div class="column">
-                <div class="ui fluid segment column">
+    </div>
+    <h3>Les tarifs sont HT. TVA non applicable, art.293 B du CGI.</h3>
+    <div class="ui stackable two column grid">
+        <div class="column">
+            <div class="ui fluid segment column">
                     {{ render(path('bitbag_sylius_cms_plugin_shop_block_render', {'code' : 'homepage_header_image'})) }}
                     <h3>Pour un devis personnaliser, veuillez nous contacter via :<br/><a href="/fr_FR/contact">le formulaire de contact !</a></h3>
-                </div>
-            </div>
-            <div class="column">
-                <div class="ui fluid segment">
-                    {{ bitbag_cms_render_block('homepage_intro') }}
-                </div>
             </div>
         </div>
-        <div class="ui stackable two column grid">
-            <div class="column">
-                <div class="ui fluid segment">
-                    {{ bitbag_cms_render_block('homepage_banner_image_1') }}
-                </div>
-            </div>
-            <div class="column">
-                <div class="ui fluid segment">
-                    {{ bitbag_cms_render_block('homepage_banner_image_2') }}
-                    <h1>Vous cherchez un cadeau et vous ne savez pas quoi offrir?<br/>
-                        vous êtes dans le bon endroit.<br/></h1>
-                       <h3> Un beau cadeau est meilleur quand il est personnalisé ! </h3>
-                </div>
+        <div class="column">
+            <div class="ui fluid segment">
+                {{ bitbag_cms_render_block('homepage_intro') }}
             </div>
         </div>
     </div>
+    <div class="ui stackable two column grid">
+        <div class="column">
+            <div class="ui fluid segment">
+                {{ bitbag_cms_render_block('homepage_banner_image_1') }}
+            </div>
+        </div>
+        <div class="column">
+             <div class="ui fluid segment">
+                 {{ bitbag_cms_render_block('homepage_banner_image_2') }}
+                    <h1>Vous cherchez un cadeau et vous ne savez pas quoi offrir?<br/>
+                        vous êtes dans le bon endroit.<br/></h1>
+                    <h3> Un beau cadeau est meilleur quand il est personnalisé ! </h3>
+            </div>
+        </div>
+    </div>
+
     <div class="ui stackable one column grid">
         <div class="column intro">
             {{ bitbag_cms_render_block('homepage_products_info') }}
